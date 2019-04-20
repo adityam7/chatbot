@@ -54,7 +54,8 @@
           "bw 300 and 700",
           "300-700",
           "bw 300 & 700",
-          "btw 300-700"
+          "btw 300-700",
+          "between 300 and 700"
         ]
       },
       {
@@ -87,6 +88,18 @@
         "value": "kolkata",
         "synonyms": [
           "calcutta"
+        ]
+      },
+      {
+        "value": "chenni",
+        "synonyms": [
+          "chennai"
+        ]
+      },
+      {
+        "value": "baroda",
+        "synonyms": [
+          "vadodara"
         ]
       }
     ],
@@ -681,7 +694,7 @@
         ]
       },
       {
-        "text": "I am looking for some restaurants in ptnnseha",
+        "text": "I am looking for some restaurants in dilli",
         "intent": "restaurant_search",
         "entities": [
           {

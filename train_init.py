@@ -12,7 +12,7 @@ from rasa_core.featurizers import (MaxHistoryTrackerFeaturizer, BinarySingleStat
 if __name__ == '__main__':
 	logging.basicConfig(level='INFO')
 	
-	training_data_file = 'stories2.md'
+	training_data_file = './data/stories.md'
 	model_path = './models/dialogue'
 	
 	featurizer = MaxHistoryTrackerFeaturizer(BinarySingleStateFeaturizer(), max_history=7)

@@ -68,7 +68,7 @@
     - utter_final_bye
 
 	
-	## Generated Story -7632184459360953130
+## Generated Story -7632184459360953130
 * greet
     - utter_greet
 * restaurant_search
@@ -164,7 +164,7 @@
     - utter_final_bye
 	
 	
-	## Generated Story -553207644721354512
+## Generated Story -553207644721354512
 * greet
     - utter_greet
 * restaurant_search
@@ -232,7 +232,7 @@
     - utter_final_bye
 	
 	
-	## Generated Story 8674505029155364583
+## Generated Story 8674505029155364583
 * greet
     - utter_greet
 * restaurant_search{"location": "manali"}
@@ -256,7 +256,7 @@
     - email_restaurant_details
 
 	
-	## Generated Story 2965639906906862557
+## Generated Story 2965639906906862557
 * greet
     - utter_greet
 * restaurant_search{"location": "pune"}
@@ -298,7 +298,7 @@
     - utter_final_bye
 	
 	
-	## Generated Story 2919437782090380438
+## Generated Story 2919437782090380438
 * greet
     - utter_greet
 * restaurant_search{"location": "graaar"}
@@ -419,7 +419,8 @@
 * affirm{"email": "aiana.goyal@upgrad.com"}
     - slot{"email": "aiana.goyal@upgrad.com"}
     - email_restaurant_details
-	
+
+
 ## Generated Story -8060376325009107014
 * greet
     - utter_greet
@@ -460,7 +461,8 @@
 * deny
     - utter_final_bye
 	
-	## Generated Story -5349745634692191142
+
+## Generated Story -5349745634692191142
 * greet
     - utter_greet
 * restaurant_search{"cuisine": "american", "location": "rohtak"}
@@ -482,7 +484,7 @@
     - email_restaurant_details
 	
 	
-	## Generated Story -31585577259034943
+## Generated Story -31585577259034943
 * greet
     - utter_greet
 * restaurant_search{"location": "hwusirinc"}
@@ -503,6 +505,7 @@
 
 * deny
     - utter_final_bye
+
 
 ## Generated Story 4088517891962411609
 * greet
@@ -526,7 +529,8 @@
     - slot{"email": "aiana.goyal@upgrad.com"}
     - email_restaurant_details
 
-	## Generated Story 5583956906143519063
+
+## Generated Story 5583956906143519063
 * greet
     - utter_greet
 * restaurant_search
@@ -551,7 +555,7 @@
     - utter_final_bye
 
 	
-	## Generated Story 1530155811557584268
+## Generated Story 1530155811557584268
 * greet
     - utter_greet
 * restaurant_search{"cuisine": "chinese", "location": "delhi"}
@@ -705,7 +709,7 @@
     - email_restaurant_details
 
 
-    ## Generated Story -6634767084668550773
+## Generated Story -6634767084668550773
 * greet
     - utter_greet
 * restaurant_search{"cuisine": "north indian", "location": "delhi"}
@@ -725,7 +729,7 @@
     - slot{"email": "goyal.aiana@gmail.com"}
     - email_restaurant_details
 
-    ## Generated Story -6634767084668550773
+## Generated Story -6634767084668550773
 * greet
     - utter_greet
 * restaurant_search{"cuisine": "north indian", "location": "delhi"}
@@ -802,3 +806,88 @@
 * affirm{"email": "aiana.goyal@upgrad.com"}
     - slot{"email": "aiana.goyal@upgrad.com"}
     - email_restaurant_details
+
+## Generated Story 1590844372497834712
+* greet
+    - utter_greet
+* restaurant_search{"location": "mumbai"}
+    - slot{"location": "mumbai"}
+    - action_check_location
+    - slot{"location": "mumbai"}
+    - slot{"location_found": "found"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "north indian"}
+    - slot{"cuisine": "north indian"}
+    - utter_ask_price
+* restaurant_search{"price": "more than 700"}
+    - slot{"price": "more than 700"}
+    - action_restaurant
+* affirm
+    - utter_ask_mail
+* affirm{"email": "adityam7@gmail.com"}
+    - slot{"email": "adityam7@gmail.com"}
+    - email_restaurant_details
+
+## Generated Story -5720442327716409010
+* greet
+    - utter_greet
+* restaurant_search{"location": "mumbai"}
+    - slot{"location": "mumbai"}
+    - action_check_location
+    - slot{"location": "mumbai"}
+    - slot{"location_found": "found"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "north indian"}
+    - slot{"cuisine": "north indian"}
+    - utter_ask_price
+* restaurant_search{"price": "more than 700"}
+    - slot{"price": "more than 700"}
+    - action_restaurant
+* affirm
+    - utter_ask_mail
+* affirm{"email": "adityam7@gmail.com"}
+    - slot{"email": "adityam7@gmail.com"}
+    - email_restaurant_details
+
+## Generated Story 3881199935798188255
+* greet
+    - utter_greet
+* restaurant_search{"location": "pune"}
+    - slot{"location": "pune"}
+    - action_check_location
+    - slot{"location": "Pune"}
+    - slot{"location_found": "found"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "mexican"}
+    - slot{"cuisine": "mexican"}
+    - utter_ask_price
+* restaurant_search{"price": "between 300 to 700"}
+    - slot{"price": "between 300 to 700"}
+    - action_restaurant
+
+## Generated Story 1348051464058417043
+* restaurant_search{"cuisine": "italian", "location": "delhi"}
+    - slot{"cuisine": "italian"}
+    - slot{"location": "delhi"}
+    - action_check_location
+    - slot{"location": "Delhi NCR"}
+    - slot{"location_found": "found"}
+    - utter_ask_price
+* restaurant_search{"price": "more than 700"}
+    - slot{"price": "more than 700"}
+    - action_restaurant
+* deny
+    - utter_final_bye
+
+## Generated Story -7170538785544741681
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "london"}
+    - slot{"location": "london"}
+    - action_check_location
+    - slot{"location": null}
+    - slot{"location_found": "tier3"}
+    - utter_foodie_not_working
+

@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 
 def train_dialogue(domain_file = 'restaurant_domain.yml',
 					model_path = './models/dialogue',
-					training_data_file = 'stories2.md'):
+					training_data_file = './data/stories.md'):
 					
 	featurizer = MaxHistoryTrackerFeaturizer(BinarySingleStateFeaturizer(), max_history=7)
 	agent = Agent(domain_file, policies = [MemoizationPolicy(max_history = 7), KerasPolicy(featurizer)])
